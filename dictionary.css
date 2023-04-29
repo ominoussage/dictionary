@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-45deg, #A18276, #B9D2B1, #DAC6B5, #F1D6B8, #FBACBE);
+    background-size: 500%;
+    animation: animate 20s ease infinite;
+}
+
+#mainbody {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#mainbody #keyword {
+    padding: 10px;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+#mainbody #keyword:focus {
+    background-size: 500%;
+    animation: animate 10s ease-in-out infinite;
+    background-image: linear-gradient(90deg, white, #69DC9E, white);
+    box-shadow: 0px 0px 20px black;
+}
+
+#mainbody #button {
+    padding: 10px;
+    border: 7px double black;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    background-image: linear-gradient(45deg, #20BFF5, #0B4F6C, #01BAEF);
+    background-size: 500%;
+    animation: animate 20s ease-in-out infinite;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+#mainbody #button:hover {
+    box-shadow: 0px 0px 30px white;
+    font-size: x-large;
+}
+
+#mainbody #button:active {
+    font-size: smaller;
+}
+
+#mainbody #sentence {
+    font-size: x-large;
+}
+
+#details {
+    display: none;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+#error {
+    display: none;
+    margin: 0px;
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#redtext {
+    color: red;
+    font-weight: bold;
+}
+
+#clowntext {
+    color: red;
+}
